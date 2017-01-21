@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+@import "compass",
+		"partials/variables",
+		"partials/normalize";
+
+// .main {
+// 	display : flex;
+// 	flex-direction : column;
+// 	justify-content : center;
+// 	align-items : center;
+// 	background : #000;
+// }
+
+body {
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	background-color : $lighter-grey;
+}
+
+.main {
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+}
+
+// ====================================================
+// Card 1 styling
+// ====================================================
+
+#card1 {
+	display : inline-block;
+	width : 300px;
+	height : 550px;
+	margin-top : 5%;
+	box-shadow : 0 5px 15px -5px $shadow-color;
+	-webkit-box-shadow : 0 5px 10px -5px $shadow-color;
+	-moz-box-shadow : 0 5px 10px -5px $shadow-color;
+	-o-box-shadow : 0 5px 10px -5px $shadow-color;
+
+
+	background-image : linear-gradient(to bottom, $dark-violet, $faint-violet);
+	background-image : -webkit-linear-gradient(to bottom, $dark-violet, $faint-violet);
+	background-image : -moz-linear-gradient(to bottom , $dark-violet, $faint-violet);
+	background-image : -o-linear-gradient(to bottom , $dark-violet, $faint-violet);
+
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+
+	h1{
+		color : $font-normal;
+		position : relative;
+		bottom : 10%;
+		font-family : 'Quicksand';
+	}
+
+	h5 {
+		position : relative;
+		bottom : 20%;
+		color : $font-normal;
+		font-family : 'Quicksand';
+	}
+
+	input:not(:last-child) {
+		color : $light-grey;
+		outline : none;
+		-webkit-outline: none;
+		-moz-outline: none;
+		-o-outline: none;
+		background : transparent;
+		margin-top : 5%;
+		position : relative;
+		bottom : 10%;
+
+		border-top : transparent;
+		border-left : transparent;
+		border-right : transparent;
+		border-bottom : .005em solid $border-color;
+
+		&:focus, &:hover {
+			outline : none;
+		}
+
+		&::-webkit-input-placeholder {
+			font-size : .7rem;
+			color : $font-normal;
+			text-align : center;
+			font-family : 'Quicksand';
+		}
+
+		&::-moz-input-placeholder {
+			font-size : .7rem;
+			color : $font-normal;
+			text-align : center;
+			font-family : 'Quicksand';
+		}
+
+		&::-o-input-placeholder {
+			font-size : .7rem;
+			color : $font-normal;
+			text-align : center;
+			font-family : 'Quicksand';
+		}
+
+		&::input-placeholder {
+			font-size : .7rem;
+			color : $font-normal;
+			text-align : center;
+			font-family : 'Quicksand';
+		}
+	}
+
+	input[ type = "submit" ] {
+		background : transparent;
+		position : relative;
+		top : 2%;
+		display : block;
+		width : 10em;
+		height : 2.5em;
+		border-top-right-radius : 2em;
+		border-bottom-right-radius : 2em;
+		border-top-left-radius : 2em;
+		border-bottom-left-radius : 2em;
+		border : 2.5px solid $font-normal;
+		color : $font-normal;
+		font-family : 'Quicksand';
+
+		&:hover {
+			animation : changeBackground 1s ease-in-out;
+		}
+	}
+}
+
+@keyframes changeBackground {
+	100% {
+		background-color : #FAFAFA;
+		color : $dark-violet;
+		border-color : $dark-violet;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================================
+// Card 2 styling
+// ============================================================
+#card2 {
+	display : inline-block;
+	width : 300px;
+	height : 550px;
+	background-color : #e3e3e3;
+	margin : 5% 0 0 5%;
+}
